@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Demo";
+}
+
+<div>
+    <h2>IOptions says: @Model.Options.Value.Title</h2>
+    <h2>IOptionsSnapshot says: @Model.Snapshot.Value.Title</h2>
+    <h2>IOptionsMonitor says: @Model.Monitor.CurrentValue.Title</h2>
+</div>
